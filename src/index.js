@@ -303,9 +303,51 @@ false && 总是返回false*/
 
 const messages = ['react', 'Re: React', 'Re:Re: React'];
 
+// ReactDOM.render(
+//     <Mailbox unreadMessages={messages} />,
+//     document.getElementById('root')
+// );
+
+// 如果条件变得复杂可能就是提取组件的好时机
+
+
+// 阻止组件渲染
+function WarningBanner(props) {
+    if(!props.warn) {
+        return null;
+    }
+
+    return (
+        <div className="warning">Warning!</div>
+    );
+}
+
+class Page extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {showWarning: true}
+        this.handleToggleClick = this.handleToggleClick.bind(this);
+    }
+    handleToggleClick() {
+        this.setState(prevState =>({
+            showWarning: !prevState.showWarning
+        }));
+    }
+    render() {
+        return (
+            <div><WarningBanner warn={this.state.showWarning}/>
+                <button onClick={this.state.showWarning}>{
+                this.state.showWarning ? 'Hide' : 'Show'
+                }</button>
+            </div>
+        );
+    }
+}
+
 ReactDOM.render(
-    <Mailbox unreadMessages={messages} />,
+    <Page  />,
     document.getElementById('root')
 );
+
 registerServiceWorker();
 
