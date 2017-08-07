@@ -298,7 +298,14 @@ function Mailbox(props) {
         </div>
     );
 }
+/*js中true&&expression 总是返回expression
+false && 总是返回false*/
 
 const messages = ['react', 'Re: React', 'Re:Re: React'];
+
+ReactDOM.render(
+    <Mailbox unreadMessages={messages} />,
+    document.getElementById('root')
+);
 registerServiceWorker();
 
