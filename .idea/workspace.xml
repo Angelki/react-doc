@@ -20,8 +20,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="342" column="18" lean-forward="true" selection-start-line="342" selection-start-column="18" selection-end-line="342" selection-end-column="18" />
+            <state relative-caret-position="185">
+              <caret line="336" column="17" lean-forward="true" selection-start-line="336" selection-start-column="17" selection-end-line="336" selection-end-column="17" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -217,7 +217,7 @@
       <workItem from="1501917002623" duration="3883000" />
       <workItem from="1501921368349" duration="1624000" />
       <workItem from="1502066899575" duration="44000" />
-      <workItem from="1502067019771" duration="22087000" />
+      <workItem from="1502067019771" duration="23853000" />
     </task>
     <task id="LOCAL-00001" summary="true&amp;&amp;expression">
       <created>1502094497996</created>
@@ -233,11 +233,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502095234973</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="阻止组件渲染2">
+      <created>1502095514396</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1502095514396</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35188000" />
+    <option name="totallyTimeSpent" value="36954000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,7 +289,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="true&amp;&amp;expression" />
     <MESSAGE value="阻止组件渲染" />
-    <option name="LAST_COMMIT_MESSAGE" value="阻止组件渲染" />
+    <MESSAGE value="阻止组件渲染2" />
+    <option name="LAST_COMMIT_MESSAGE" value="阻止组件渲染2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -372,8 +380,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="342" column="18" lean-forward="true" selection-start-line="342" selection-start-column="18" selection-end-line="342" selection-end-column="18" />
+        <state relative-caret-position="185">
+          <caret line="336" column="17" lean-forward="true" selection-start-line="336" selection-start-column="17" selection-end-line="336" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

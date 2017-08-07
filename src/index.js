@@ -316,16 +316,15 @@ function WarningBanner(props) {
     if(!props.warn) {
         return null;
     }
-
     return (
-        <div className="warning">Warning!</div>
+        <div className="warning">Warning!你来打我呀</div>
     );
 }
 
 class Page extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {showWarning: true}
+        this.state = {showWarning: false}
         this.handleToggleClick = this.handleToggleClick.bind(this);
     }
     handleToggleClick() {
