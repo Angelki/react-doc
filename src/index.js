@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import registerServiceWorker from './registerServiceWorker';//在生产环境做本地缓存的东西
 
 // 函数定义组件
