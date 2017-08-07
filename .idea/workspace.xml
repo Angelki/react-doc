@@ -21,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="185">
-              <caret line="336" column="17" lean-forward="true" selection-start-line="336" selection-start-column="17" selection-end-line="336" selection-end-column="17" />
+              <caret line="354" column="10" lean-forward="false" selection-start-line="354" selection-start-column="10" selection-end-line="354" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -217,7 +217,7 @@
       <workItem from="1501917002623" duration="3883000" />
       <workItem from="1501921368349" duration="1624000" />
       <workItem from="1502066899575" duration="44000" />
-      <workItem from="1502067019771" duration="23853000" />
+      <workItem from="1502067019771" duration="24298000" />
     </task>
     <task id="LOCAL-00001" summary="true&amp;&amp;expression">
       <created>1502094497996</created>
@@ -240,11 +240,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502095514396</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="阻止组件渲染3">
+      <created>1502097365668</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1502097365668</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36954000" />
+    <option name="totallyTimeSpent" value="37399000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -290,7 +297,8 @@
     <MESSAGE value="true&amp;&amp;expression" />
     <MESSAGE value="阻止组件渲染" />
     <MESSAGE value="阻止组件渲染2" />
-    <option name="LAST_COMMIT_MESSAGE" value="阻止组件渲染2" />
+    <MESSAGE value="阻止组件渲染3" />
+    <option name="LAST_COMMIT_MESSAGE" value="阻止组件渲染3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -381,7 +389,7 @@
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
-          <caret line="336" column="17" lean-forward="true" selection-start-line="336" selection-start-column="17" selection-end-line="336" selection-end-column="17" />
+          <caret line="354" column="10" lean-forward="false" selection-start-line="354" selection-start-column="10" selection-end-line="354" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

@@ -286,68 +286,79 @@ ReactDOM.render(
 );*/
 
 
-function Mailbox(props) {
-    const unreadMessages = props.unreadMessages;
-    return (
-        <div>
-            <h1>Hello!</h1>
-            {unreadMessages.length > 0 &&
-            <h2>
-                You have {unreadMessages.length} unread messages.
-            </h2>}
-        </div>
-    );
-}
-/*js中true&&expression 总是返回expression
-false && 总是返回false*/
-
-const messages = ['react', 'Re: React', 'Re:Re: React'];
-
+// function Mailbox(props) {
+//     const unreadMessages = props.unreadMessages;
+//     return (
+//         <div>
+//             <h1>Hello!</h1>
+//             {unreadMessages.length > 0 &&
+//             <h2>
+//                 You have {unreadMessages.length} unread messages.
+//             </h2>}
+//         </div>
+//     );
+// }
+// /*js中true&&expression 总是返回expression
+// false && 总是返回false*/
+//
+// const messages = ['react', 'Re: React', 'Re:Re: React'];
+//
+// // ReactDOM.render(
+// //     <Mailbox unreadMessages={messages} />,
+// //     document.getElementById('root')
+// // );
+//
+// // 如果条件变得复杂可能就是提取组件的好时机
+//
+//
+// // 阻止组件渲染
+// function WarningBanner(props) {
+//     if(!props.warn) {
+//         return null;
+//     }
+//     return (
+//         <div className="warning">Warning!你来打我呀</div>
+//     );
+// }
+//
+// class Page extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {showWarning: false}
+//         this.handleToggleClick = this.handleToggleClick.bind(this);
+//     }
+//     handleToggleClick() {
+//         this.setState(prevState =>({
+//             showWarning: !prevState.showWarning
+//         }));
+//     }
+//     render() {
+//         return (
+//             <div>
+//                 <WarningBanner warn={this.state.showWarning}/>
+//                 <button onClick={this.handleToggleClick}>
+//                     {this.state.showWarning ? 'Hide' : 'Show'}
+//                 </button>
+//             </div>
+//         );
+//     }
+// }
+//
 // ReactDOM.render(
-//     <Mailbox unreadMessages={messages} />,
+//     <Page  />,
 //     document.getElementById('root')
 // );
 
-// 如果条件变得复杂可能就是提取组件的好时机
+// ***********************************列表&&keys
 
-
-// 阻止组件渲染
-function WarningBanner(props) {
-    if(!props.warn) {
-        return null;
-    }
-    return (
-        <div className="warning">Warning!你来打我呀</div>
-    );
-}
-
-class Page extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {showWarning: false}
-        this.handleToggleClick = this.handleToggleClick.bind(this);
-    }
-    handleToggleClick() {
-        this.setState(prevState =>({
-            showWarning: !prevState.showWarning
-        }));
-    }
-    render() {
-        return (
-            <div>
-                <WarningBanner warn={this.state.showWarning}/>
-                <button onClick={this.handleToggleClick}>
-                    {this.state.showWarning ? 'Hide' : 'Show'}
-                </button>
-            </div>
-        );
-    }
-}
-
-ReactDOM.render(
-    <Page  />,
-    document.getElementById('root')
+const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((numbers) =>
+    <li>{numbers}</li>
 );
 
+ReactDOM.render(
+    <ul>{listItems}</ul>,
+    document.getElementById('root')
+);
 registerServiceWorker();
 
