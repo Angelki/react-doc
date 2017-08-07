@@ -335,10 +335,11 @@ class Page extends React.Component {
     }
     render() {
         return (
-            <div><WarningBanner warn={this.state.showWarning}/>
-                <button onClick={this.state.showWarning}>{
-                this.state.showWarning ? 'Hide' : 'Show'
-                }</button>
+            <div>
+                <WarningBanner warn={this.state.showWarning}/>
+                <button onClick={this.handleToggleClick}>
+                    {this.state.showWarning ? 'Hide' : 'Show'}
+                </button>
             </div>
         );
     }
