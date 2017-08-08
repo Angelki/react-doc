@@ -429,10 +429,11 @@ ReactDOM.render(
 );
 */
 // 表单
+/*
 class NameForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {value: ''};
+        this.state = {value: '提示'};
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -441,7 +442,10 @@ class NameForm extends React.Component {
     handleChange(event) {
         this.setState({value: event.target.value});
     }
-
+    /!*
+    Event 对象
+    Event 对象代表事件的状态，比如事件在其中发生的元素、键盘按键的状态、鼠标的位置、鼠标按钮的状态。
+    事件通常与函数结合使用，函数不会在事件发生前被执行！*!/
     handleSubmit(event) {
         alert('A name was submitted: ' + this.state.value);
         event.preventDefault();
@@ -461,16 +465,10 @@ class NameForm extends React.Component {
 }
 
 ReactDOM.render(
-    <NameForm/>,
+    <NameForm />,
     document.getElementById('root')
 );
-
-
-
-
-
-
-
+*/
 
 registerServiceWorker();
 
