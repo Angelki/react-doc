@@ -361,6 +361,65 @@ ReactDOM.render(
 //     document.getElementById('root')
 // );
 
+// function NumberList(props) {
+//     const numbers = props.numbers;
+//     const listItems = numbers.map((number) =>
+//         <li key={number.toString()}>
+//             {number}
+//         </li>
+//     );
+//     return (
+//         <ul>{listItems}</ul>
+//     );
+// }
+//
+// const numbers = [9, 2, 3, 5, 'sfsfsdf'];
+// ReactDOM.render(
+//     <NumberList numbers={numbers} />,
+//     document.getElementById('root')
+// )
+
+// *************************key的正确使用方法
+// key会作为給react的提示，但是不会传递給组件
+
+/*function ListItem(props) {
+    return <li>{props.value}</li>;
+}
+
+function NumberList(props) {
+    const numbers = props.numbers;
+    const listItems = numbers.map((number) =>
+    <ListItem key={number.toString()} value={number} />
+    );
+    return (
+        <ul>
+            {listItems}
+        </ul>
+    );
+}
+
+
+const numbers = [1, 2, 3, 4, 5];
+ReactDOM.render(
+    <NumberList numbers={numbers} />,
+    document.getElementById('root')
+);*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 registerServiceWorker();
 
