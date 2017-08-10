@@ -523,14 +523,19 @@ ReactDOM.render(
 // );
 
 
-function BoilingVerdict(props) {
-    if(props.celsius >= 100) {
-        return <p>水会烧开</p>;
-    }
-    return <p>will not</p>;
-}
+// function BoilingVerdict(props) {
+//     if(props.celsius >= 100) {
+//         return <p>水会烧开</p>;
+//     }
+//     return <p>will not</p>;
+// }
 
-class Calculator extends React.Component {
+const scaleNames = {
+    c: 'Celsius',
+    f: 'Fahrenheit'
+};
+
+class TemperatureInput extends React.Component {
     constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);
@@ -543,23 +548,35 @@ class Calculator extends React.Component {
 
     render() {
         const temperature = this.state.temperature;
-
+        const scale = this.state.scale;
         return (
             <fieldset>
-                <legend>Please enter a Celsius</legend>
+                <legend>Enter temperature in {scaleNames[scale]}:</legend>
                 <input
                 value={temperature}
                 onChange={this.handleChange}
                 style={{width:1000+"px"}}
                 />
-                <BoilingVerdict
-                    celsius={parseFloat(temperature)}/>
+                {/*<BoilingVerdict*/}
+                    {/*celsius={parseFloat(temperature)}/>*/}
+
             </fieldset>
         );
     }
 }
+
+class Calculator extends React.Component {
+    render() {
+        return (
+            <div>
+                <TemperatureInput scale="c"/>
+                <TemperatureInput scale="f"/>
+            </div>
+        );
+    }
+}
 ReactDOM.render(
-    <Calculator/>,
+    <Calculator />,
     document.getElementById('root')
 );
 
