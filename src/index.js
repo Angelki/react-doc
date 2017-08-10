@@ -522,5 +522,46 @@ ReactDOM.render(
 //     document.getElementById('root')
 // );
 
+
+function BoilingVerdict(props) {
+    if(props.celsius >= 100) {
+        return <p>水会烧开</p>;
+    }
+    return <p>will not</p>;
+}
+
+class Calculator extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleChange = this.handleChange.bind(this);
+        this.state = {temperature: ''};
+    }
+
+    handleChange(e) {
+        this.setState({temperature: e.target.value});
+    }
+
+    render() {
+        const temperature = this.state.temperature;
+
+        return (
+            <fieldset>
+                <legend>Please enter a Celsius</legend>
+                <input
+                value={temperature}
+                onChange={this.handleChange}
+                style={{width:1000+"px"}}
+                />
+                <BoilingVerdict
+                    celsius={parseFloat(temperature)}/>
+            </fieldset>
+        );
+    }
+}
+ReactDOM.render(
+    <Calculator/>,
+    document.getElementById('root')
+);
+
 registerServiceWorker();
 
